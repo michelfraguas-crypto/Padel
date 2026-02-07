@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Auto-évaluation du Niveau - Padel Community</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0df20d",
+                        "background-light": "#f5f8f5",
+                        "background-dark": "#0a0f0a",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Lexend', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .neon-glow {
+            text-shadow: 0 0 10px rgba(13, 242, 13, 0.5), 0 0 20px rgba(13, 242, 13, 0.3);
+        }
+        .neon-border {
+            box-shadow: 0 0 15px rgba(13, 242, 13, 0.2);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-300">
+<!-- Main Container (Mobile Viewport) -->
+<div class="relative flex h-screen w-full flex-col overflow-hidden max-w-[430px] mx-auto bg-background-light dark:bg-background-dark">
+<!-- Top App Bar -->
+<header class="flex items-center justify-between p-6 pt-12">
+<button class="flex items-center justify-center size-10 rounded-full bg-slate-200/50 dark:bg-white/10 text-slate-900 dark:text-white transition-transform active:scale-95">
+<span class="material-symbols-outlined">arrow_back_ios_new</span>
+</button>
+<h2 class="text-sm font-bold uppercase tracking-widest opacity-70">Onboarding</h2>
+<div class="size-10"></div> <!-- Spacer -->
+</header>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col px-6 overflow-y-auto pb-24">
+<!-- Hero Illustration Section -->
+<div class="relative w-full aspect-square max-h-[280px] flex items-center justify-center mt-4">
+<!-- Abstract Glow Background -->
+<div class="absolute inset-0 bg-primary/10 rounded-full blur-[60px]"></div>
+<!-- Hero Image (Padel Racket) -->
+<div class="relative w-full h-full bg-center bg-no-repeat bg-contain" data-alt="Modern professional carbon padel racket on dark background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCXFd3lolZ_w9oe4RgAkLU62sw4y_VdAoepOrDk0FMxrzNViNTA184s0l1f-NibTkbyzpeP3YQhe7sj7YyNaFXdCxNzl9hILJxq1AF-YaGDYM5tDOYspnc-AWgLbMXCa19tD3Zt_D0U_Jkk9A2OWuMx7YfB9IItzY-8-x5N7t14o9s27BhL4e4TwcNpLnWhql-ypCCfnUxyAgOAyo2h_W9MKRvPk22dpKaCoOB2dY-8YFeEC1I9Pgt3-o6vH7FPX1GmXL3T_1fa3ls');">
+</div>
+</div>
+<!-- Title & Prompt -->
+<div class="text-center mt-6 mb-8">
+<h1 class="text-3xl font-extrabold leading-tight tracking-tight mb-2">
+                    Quel est votre <span class="text-primary italic">niveau ?</span>
+</h1>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-light">
+                    Auto-évaluez-vous pour trouver des partenaires de votre force.
+                </p>
+</div>
+<!-- Level Display -->
+<div class="flex flex-col items-center mb-10">
+<div class="text-[64px] font-black leading-none text-primary neon-glow mb-2">7.25</div>
+<div class="px-4 py-1.5 rounded-full bg-primary/20 text-primary border border-primary/30 text-xs font-bold uppercase tracking-wider">
+                    Confirmé
+                </div>
+</div>
+<!-- Description Card -->
+<div class="glass-panel rounded-xl p-5 mb-10 neon-border min-h-[100px] flex items-center">
+<p class="text-center w-full text-slate-700 dark:text-slate-200 leading-relaxed">
+<span class="font-bold text-primary">7.25</span> — Vous maîtrisez les <span class="italic">bandejas</span> et le jeu au filet. Vous commencez à gérer les effets complexes et les sorties de vitre difficiles.
+                </p>
+</div>
+<!-- Custom Range Slider -->
+<div class="w-full space-y-6">
+<!-- Tier Labels -->
+<div class="flex justify-between text-[10px] uppercase font-bold tracking-tighter text-slate-400 dark:text-slate-500 px-1">
+<span>Débutant</span>
+<span>Intermédiaire</span>
+<span>Confirmé</span>
+<span class="text-primary">Expert</span>
+</div>
+<!-- The Slider Track -->
+<div class="relative h-12 flex items-center group">
+<!-- Progress Bar -->
+<div class="absolute h-1.5 w-full bg-slate-200 dark:bg-white/10 rounded-full"></div>
+<!-- Active Progress -->
+<div class="absolute h-1.5 w-[72.5%] bg-primary rounded-full shadow-[0_0_10px_rgba(13,242,13,0.6)]"></div>
+<!-- Tick Marks -->
+<div class="absolute w-full flex justify-between px-1">
+<div class="h-1.5 w-0.5 bg-slate-900/10 dark:bg-white/20"></div>
+<div class="h-1.5 w-0.5 bg-slate-900/10 dark:bg-white/20"></div>
+<div class="h-1.5 w-0.5 bg-slate-900/10 dark:bg-white/20"></div>
+<div class="h-1.5 w-0.5 bg-slate-900/10 dark:bg-white/20"></div>
+<div class="h-1.5 w-0.5 bg-slate-900/10 dark:bg-white/20"></div>
+</div>
+<!-- Handle -->
+<div class="absolute left-[72.5%] -translate-x-1/2 flex flex-col items-center">
+<div class="size-8 rounded-full bg-white shadow-xl flex items-center justify-center border-4 border-primary">
+<div class="size-2 rounded-full bg-primary"></div>
+</div>
+</div>
+</div>
+<!-- Slider Scale Numbers -->
+<div class="flex justify-between text-xs font-medium text-slate-400 px-1">
+<span>0</span>
+<span>2.5</span>
+<span>5.0</span>
+<span>7.5</span>
+<span>10</span>
+</div>
+</div>
+</main>
+<!-- Fixed Bottom Action Bar -->
+<footer class="p-6 bg-gradient-to-t from-background-light dark:from-background-dark via-background-light dark:via-background-dark to-transparent pt-10">
+<button class="w-full bg-primary hover:bg-primary/90 text-background-dark font-extrabold text-lg py-4 rounded-xl shadow-lg shadow-primary/20 flex items-center justify-center gap-2 active:scale-[0.98] transition-all">
+                CONFIRMER MON NIVEAU
+                <span class="material-symbols-outlined font-bold">arrow_forward</span>
+</button>
+<div class="mt-4 flex justify-center">
+<div class="h-1 w-32 rounded-full bg-slate-300 dark:bg-white/20"></div> <!-- iOS Home Indicator -->
+</div>
+</footer>
+</div>
+</body></html>

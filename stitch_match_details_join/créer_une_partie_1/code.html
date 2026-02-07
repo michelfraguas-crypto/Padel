@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Créer une Partie - Padel Hub</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b8cee",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "card-dark": "#1c2631",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Lexend', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .form-input-custom {
+            @apply w-full bg-card-dark border-none rounded-xl text-white px-4 py-4 focus:ring-2 focus:ring-primary;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen pb-24">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+<div class="flex items-center justify-between p-4 max-w-md mx-auto">
+<button class="flex items-center justify-center p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-2xl">arrow_back_ios</span>
+</button>
+<h1 class="text-lg font-bold tracking-tight">Créer une Partie</h1>
+<button class="text-primary font-bold text-base hover:opacity-80 transition-opacity">Publier</button>
+</div>
+</header>
+<main class="max-w-md mx-auto p-4 space-y-8">
+<!-- Step Indicator (Optional visual element) -->
+<div class="flex gap-1 mb-6">
+<div class="h-1 flex-1 bg-primary rounded-full"></div>
+<div class="h-1 flex-1 bg-primary rounded-full"></div>
+<div class="h-1 flex-1 bg-slate-700 rounded-full"></div>
+</div>
+<!-- Section 1: Club Selection -->
+<section class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<h3 class="text-lg font-bold">Où jouez-vous ?</h3>
+</div>
+<div class="relative">
+<select class="form-input-custom appearance-none cursor-pointer">
+<option disabled="" selected="" value="">Sélectionner le club</option>
+<option value="1">Padel Horizon (Sucy-en-Brie)</option>
+<option value="2">Casa Padel (Saint-Denis)</option>
+<option value="3">4Padel (Montreuil)</option>
+<option value="4">Forest Hill (Versailles)</option>
+</select>
+<div class="absolute inset-y-0 right-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-slate-400">expand_more</span>
+</div>
+</div>
+</section>
+<!-- Section 2: Date and Time -->
+<section class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">calendar_today</span>
+<h3 class="text-lg font-bold">Date et Heure</h3>
+</div>
+<div class="bg-card-dark rounded-xl p-4 overflow-hidden">
+<div class="flex items-center justify-between mb-4">
+<button class="p-1"><span class="material-symbols-outlined text-slate-400">chevron_left</span></button>
+<p class="font-bold">Mai 2024</p>
+<button class="p-1"><span class="material-symbols-outlined text-slate-400">chevron_right</span></button>
+</div>
+<div class="grid grid-cols-7 gap-1 text-center mb-4">
+<span class="text-[10px] uppercase font-bold text-slate-500">Lun</span>
+<span class="text-[10px] uppercase font-bold text-slate-500">Mar</span>
+<span class="text-[10px] uppercase font-bold text-slate-500">Mer</span>
+<span class="text-[10px] uppercase font-bold text-slate-500">Jeu</span>
+<span class="text-[10px] uppercase font-bold text-slate-500">Ven</span>
+<span class="text-[10px] uppercase font-bold text-slate-500">Sam</span>
+<span class="text-[10px] uppercase font-bold text-slate-500">Dim</span>
+<!-- Calendar placeholder logic -->
+<button class="h-10 w-10 flex items-center justify-center rounded-full text-sm">1</button>
+<button class="h-10 w-10 flex items-center justify-center rounded-full text-sm">2</button>
+<button class="h-10 w-10 flex items-center justify-center rounded-full text-sm">3</button>
+<button class="h-10 w-10 flex items-center justify-center rounded-full bg-primary text-white text-sm font-bold">4</button>
+<button class="h-10 w-10 flex items-center justify-center rounded-full text-sm">5</button>
+<button class="h-10 w-10 flex items-center justify-center rounded-full text-sm">6</button>
+<button class="h-10 w-10 flex items-center justify-center rounded-full text-sm">7</button>
+</div>
+<div class="flex items-center gap-4 pt-4 border-t border-slate-700">
+<div class="flex-1">
+<label class="text-xs text-slate-400 block mb-1">Heure de début</label>
+<input class="bg-transparent border-none text-white font-bold p-0 focus:ring-0 w-full text-lg" type="time" value="18:30"/>
+</div>
+<div class="h-8 w-px bg-slate-700"></div>
+<div class="flex-1">
+<label class="text-xs text-slate-400 block mb-1">Durée</label>
+<select class="bg-transparent border-none text-white font-bold p-0 focus:ring-0 w-full text-lg">
+<option>60 min</option>
+<option selected="">90 min</option>
+<option>120 min</option>
+</select>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Game Details -->
+<section class="space-y-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">groups</span>
+<h3 class="text-lg font-bold">Détails de la partie</h3>
+</div>
+<div class="space-y-4">
+<!-- Players needed -->
+<div class="flex items-center justify-between bg-card-dark p-4 rounded-xl">
+<div>
+<p class="font-medium">Joueurs manquants</p>
+<p class="text-xs text-slate-400">Nombre de places ouvertes</p>
+</div>
+<div class="flex items-center gap-4">
+<button class="w-8 h-8 rounded-full border border-slate-600 flex items-center justify-center hover:bg-slate-700">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="font-bold text-xl">3</span>
+<button class="w-8 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-primary/80">
+<span class="material-symbols-outlined text-sm text-white">add</span>
+</button>
+</div>
+</div>
+<!-- Level Range -->
+<div class="bg-card-dark p-4 rounded-xl space-y-4">
+<div class="flex justify-between items-center">
+<div>
+<p class="font-medium">Niveau recherché</p>
+<p class="text-xs text-slate-400">De débutant à pro</p>
+</div>
+<span class="text-primary font-bold">4.0 - 6.5</span>
+</div>
+<div class="relative h-6 flex items-center">
+<div class="absolute h-1 w-full bg-slate-700 rounded-full"></div>
+<div class="absolute h-1 w-1/2 bg-primary rounded-full left-[20%]"></div>
+<div class="absolute left-[20%] w-5 h-5 bg-white rounded-full shadow-lg border-2 border-primary cursor-pointer"></div>
+<div class="absolute left-[70%] w-5 h-5 bg-white rounded-full shadow-lg border-2 border-primary cursor-pointer"></div>
+</div>
+<div class="flex justify-between text-[10px] text-slate-500 font-bold uppercase">
+<span>Lvl 1</span>
+<span>Lvl 10</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Visibility -->
+<section class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">visibility</span>
+<h3 class="text-lg font-bold">Confidentialité</h3>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<button class="flex flex-col items-center p-4 rounded-xl border-2 border-primary bg-primary/10 transition-all">
+<span class="material-symbols-outlined mb-2 text-primary">public</span>
+<span class="font-bold text-sm">Publique</span>
+<span class="text-[10px] text-slate-400 text-center mt-1 leading-tight">Visible par toute la communauté</span>
+</button>
+<button class="flex flex-col items-center p-4 rounded-xl border-2 border-transparent bg-card-dark hover:border-slate-700 transition-all">
+<span class="material-symbols-outlined mb-2 text-slate-400">lock</span>
+<span class="font-bold text-sm">Privée</span>
+<span class="text-[10px] text-slate-400 text-center mt-1 leading-tight">Uniquement via lien d'invitation</span>
+</button>
+</div>
+</section>
+<!-- Additional Note -->
+<section class="space-y-2">
+<label class="text-sm font-medium text-slate-400 px-1">Note ou consigne (optionnel)</label>
+<textarea class="form-input-custom h-24 resize-none" placeholder="Ex: On cherche des joueurs motivés pour un match sérieux !"></textarea>
+</section>
+</main>
+<!-- Bottom Action Button -->
+<div class="fixed bottom-0 left-0 right-0 p-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-t border-slate-200 dark:border-slate-800">
+<div class="max-w-md mx-auto">
+<button class="w-full bg-primary text-white py-4 rounded-xl font-bold text-lg shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all">
+                Créer la partie
+            </button>
+</div>
+</div>
+</body></html>

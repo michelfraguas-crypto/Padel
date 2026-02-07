@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Créer une Partie - Padel Hub</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#CEFF00", // Neon yellow for high outdoor contrast
+                        "primary-dark": "#b8e600",
+                        "background-dark": "#0A0A0B",
+                        "card-dark": "#161618",
+                        "accent": "#27272A",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "ios": "1.25rem",
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body { 
+                @apply font-display bg-background-dark text-white selection:bg-primary selection:text-black;
+                -webkit-tap-highlight-color: transparent;
+            }
+        }
+        .segmented-picker::-webkit-scrollbar { display: none; }
+        .haptic-touch:active { transform: scale(0.96); transition: transform 0.1s ease; }
+        .glass-header { @apply sticky top-0 z-50 bg-background-dark/90 backdrop-blur-xl border-b border-white/10; }
+        .input-pill { @apply bg-accent border-none rounded-ios px-5 py-4 text-white focus:ring-2 focus:ring-primary w-full text-base font-medium; }
+        .level-card { @apply flex-shrink-0 w-16 h-16 rounded-2xl flex flex-col items-center justify-center border-2 transition-all; }
+        .level-card.active { @apply border-primary bg-primary text-black font-extrabold; }
+        .level-card.inactive { @apply border-accent bg-accent text-slate-400; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen pb-32">
+<header class="glass-header">
+<div class="flex items-center justify-between px-4 py-3 max-w-md mx-auto">
+<button class="haptic-touch flex items-center justify-center w-10 h-10 rounded-full bg-accent">
+<span class="material-symbols-outlined text-white">close</span>
+</button>
+<h1 class="text-xl font-extrabold tracking-tight uppercase italic">Nouvelle Partie</h1>
+<div class="w-10"></div>
+</div>
+</header>
+<main class="max-w-md mx-auto p-5 space-y-10">
+<div class="flex flex-col items-center text-center space-y-3 pt-4">
+<div class="w-20 h-20 bg-primary rounded-3xl flex items-center justify-center rotate-3 shadow-[0_0_30px_rgba(206,255,0,0.3)]">
+<span class="material-symbols-outlined text-black text-5xl font-bold">sports_tennis</span>
+</div>
+<p class="text-slate-400 font-medium text-sm">Prêt pour le smash ?</p>
+</div>
+<section class="space-y-4">
+<div class="flex items-center justify-between">
+<h3 class="text-sm font-bold uppercase tracking-widest text-primary">Le Club</h3>
+<span class="material-symbols-outlined text-slate-500">location_on</span>
+</div>
+<div class="relative">
+<select class="input-pill appearance-none cursor-pointer">
+<option value="1">Padel Horizon (Sucy)</option>
+<option value="2">Casa Padel (Saint-Denis)</option>
+<option value="3">4Padel (Montreuil)</option>
+</select>
+<div class="absolute inset-y-0 right-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-primary">expand_more</span>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<h3 class="text-sm font-bold uppercase tracking-widest text-primary">Date</h3>
+<div class="relative">
+<input class="input-pill" type="date" value="2024-05-15"/>
+</div>
+</div>
+<div class="space-y-4">
+<h3 class="text-sm font-bold uppercase tracking-widest text-primary">Heure</h3>
+<div class="relative">
+<input class="input-pill" type="time" value="18:30"/>
+</div>
+</div>
+</section>
+<section class="space-y-4">
+<div class="flex items-center justify-between">
+<h3 class="text-sm font-bold uppercase tracking-widest text-primary">Niveau Requis</h3>
+<span class="bg-primary/20 text-primary text-xs font-black px-2 py-1 rounded">MOYEN</span>
+</div>
+<div class="segmented-picker flex gap-3 overflow-x-auto pb-4 no-scrollbar -mx-5 px-5">
+<button class="haptic-touch level-card inactive">
+<span class="text-xs opacity-60">Lvl</span>
+<span class="text-lg">3.0</span>
+</button>
+<button class="haptic-touch level-card inactive">
+<span class="text-xs opacity-60">Lvl</span>
+<span class="text-lg">3.25</span>
+</button>
+<button class="haptic-touch level-card inactive">
+<span class="text-xs opacity-60">Lvl</span>
+<span class="text-lg">3.5</span>
+</button>
+<button class="haptic-touch level-card inactive">
+<span class="text-xs opacity-60">Lvl</span>
+<span class="text-lg">3.75</span>
+</button>
+<button class="haptic-touch level-card active shadow-[0_0_20px_rgba(206,255,0,0.4)]">
+<span class="text-xs">Lvl</span>
+<span class="text-lg">4.0</span>
+</button>
+<button class="haptic-touch level-card inactive">
+<span class="text-xs opacity-60">Lvl</span>
+<span class="text-lg">4.25</span>
+</button>
+<button class="haptic-touch level-card inactive">
+<span class="text-xs opacity-60">Lvl</span>
+<span class="text-lg">4.5</span>
+</button>
+<button class="haptic-touch level-card inactive">
+<span class="text-xs opacity-60">Lvl</span>
+<span class="text-lg">4.75</span>
+</button>
+<button class="haptic-touch level-card inactive">
+<span class="text-xs opacity-60">Lvl</span>
+<span class="text-lg">5.0</span>
+</button>
+</div>
+</section>
+<section class="space-y-4">
+<div class="grid grid-cols-1 gap-4">
+<div class="bg-accent rounded-ios p-5 flex items-center justify-between">
+<div>
+<p class="font-bold text-lg">Joueurs manquants</p>
+<p class="text-xs text-slate-400">Pour compléter la partie</p>
+</div>
+<div class="flex items-center gap-5">
+<button class="haptic-touch w-10 h-10 rounded-full border border-white/20 flex items-center justify-center">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<span class="font-black text-2xl text-primary">3</span>
+<button class="haptic-touch w-10 h-10 rounded-full bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-black font-bold">add</span>
+</button>
+</div>
+</div>
+<div class="bg-accent rounded-ios p-5 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-400">schedule</span>
+<p class="font-bold text-lg">Durée</p>
+</div>
+<select class="bg-transparent border-none text-primary font-black text-lg focus:ring-0 text-right pr-0">
+<option>60 min</option>
+<option selected="">90 min</option>
+<option>120 min</option>
+</select>
+</div>
+</div>
+</section>
+<section class="space-y-4">
+<h3 class="text-sm font-bold uppercase tracking-widest text-primary">Visibilité</h3>
+<div class="grid grid-cols-2 gap-4">
+<button class="haptic-touch flex flex-col items-start p-5 rounded-ios bg-primary text-black transition-all">
+<span class="material-symbols-outlined mb-2 text-3xl">public</span>
+<span class="font-extrabold text-lg italic">PUBLIQUE</span>
+<span class="text-[10px] font-bold opacity-70 mt-1 uppercase">Ouvert à tous</span>
+</button>
+<button class="haptic-touch flex flex-col items-start p-5 rounded-ios bg-accent border border-white/10 transition-all">
+<span class="material-symbols-outlined mb-2 text-3xl text-slate-400">lock_open</span>
+<span class="font-extrabold text-lg italic text-slate-300">PRIVÉE</span>
+<span class="text-[10px] font-bold text-slate-500 mt-1 uppercase">Lien d'invitation</span>
+</button>
+</div>
+</section>
+<section class="space-y-4">
+<h3 class="text-sm font-bold uppercase tracking-widest text-primary">Message</h3>
+<textarea class="input-pill h-32 resize-none" placeholder="Une petite consigne ? (Optionnel)"></textarea>
+</section>
+</main>
+<div class="fixed bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-background-dark via-background-dark/95 to-transparent pt-10">
+<div class="max-w-md mx-auto">
+<button class="haptic-touch w-full bg-primary text-black py-5 rounded-ios font-extrabold text-xl shadow-[0_10px_40px_rgba(206,255,0,0.3)] uppercase italic tracking-wider">
+                Créer le Match
+            </button>
+</div>
+</div>
+
+</body></html>

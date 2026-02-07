@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b8cee",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Lexend', sans-serif; }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen pb-24">
+<!-- Top AppBar -->
+<div class="sticky top-0 z-50 flex items-center bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md p-4 justify-between border-b border-slate-200 dark:border-slate-800">
+<div class="text-primary flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-primary/10 cursor-pointer">
+<span class="material-symbols-outlined">chevron_left</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-tight flex-1 text-center">Détails de l'Événement</h2>
+<div class="flex w-10 items-center justify-end">
+<button class="flex items-center justify-center rounded-full size-10 text-primary hover:bg-primary/10">
+<span class="material-symbols-outlined">share</span>
+</button>
+</div>
+</div>
+<!-- Hero Banner -->
+<div class="@container">
+<div class="px-0 sm:px-4 py-0 sm:py-4">
+<div class="relative w-full aspect-video sm:aspect-[21/9] bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden sm:rounded-xl shadow-2xl" data-alt="Modern indoor padel court with blue turf and glass walls" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCvgk-Ny2Idbgxq4ZJdV9o8rack0CElNHSYckd7UAY0-tsSR19F-gccGJa0VbEvCZpZk2u12Xs2A_fMlOXzWGyw3kVv6ycKGVic-AcyPzSkST8gHOD-7ufkZZwPIN_QvyKGRZgDvZhuedtd10QYBgbusX-zh5OpuBxg1iQSDYuzoyV117q_dAI_-5pFKK4QR4YUKgED_z0x_G9ERGMbP6hipqBspX0newt026enhjAhBjot7WywnFH_hLqBtd2bla_RXhSIQ-J0pcQ");'>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
+<div class="relative p-6">
+<span class="inline-flex items-center gap-1 bg-primary text-white text-xs font-bold px-2.5 py-1 rounded-full mb-3 uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px] animate-pulse">sports_tennis</span> Tournoi Officiel
+                    </span>
+<h1 class="text-white text-3xl font-extrabold leading-tight tracking-tight">Open Padel Masters Lyon</h1>
+<p class="text-slate-300 text-sm font-medium mt-1 flex items-center gap-1">
+                        Organisé par <span class="text-primary underline">Padel Club Central</span>
+</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Info Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3 p-4">
+<div class="flex flex-col gap-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-4">
+<span class="material-symbols-outlined text-primary">calendar_today</span>
+<div>
+<h3 class="text-slate-500 dark:text-slate-400 text-xs font-semibold uppercase tracking-wider">Date</h3>
+<p class="text-slate-900 dark:text-white text-sm font-bold">24 Mai, 10:00</p>
+</div>
+</div>
+<div class="flex flex-col gap-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-4">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div>
+<h3 class="text-slate-500 dark:text-slate-400 text-xs font-semibold uppercase tracking-wider">Lieu</h3>
+<p class="text-slate-900 dark:text-white text-sm font-bold">Lyon Sud Club</p>
+</div>
+</div>
+<div class="flex flex-col gap-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-4">
+<span class="material-symbols-outlined text-primary">payments</span>
+<div>
+<h3 class="text-slate-500 dark:text-slate-400 text-xs font-semibold uppercase tracking-wider">Prix</h3>
+<p class="text-slate-900 dark:text-white text-sm font-bold">25€ / joueur</p>
+</div>
+</div>
+<div class="flex flex-col gap-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-4">
+<span class="material-symbols-outlined text-primary">groups</span>
+<div>
+<h3 class="text-slate-500 dark:text-slate-400 text-xs font-semibold uppercase tracking-wider">Format</h3>
+<p class="text-slate-900 dark:text-white text-sm font-bold">Double (P250)</p>
+</div>
+</div>
+</div>
+<!-- Level Indicator -->
+<div class="px-4 mb-6">
+<div class="bg-white dark:bg-slate-900/50 rounded-xl border border-slate-200 dark:border-slate-800 p-5">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-slate-900 dark:text-white font-bold">Niveau requis</h3>
+<span class="text-primary font-bold bg-primary/10 px-3 py-1 rounded-full text-sm">Intermédiaire (4 - 7)</span>
+</div>
+<div class="relative h-2 w-full bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
+<div class="absolute left-[40%] right-[30%] h-full bg-primary rounded-full shadow-[0_0_10px_rgba(43,140,238,0.5)]"></div>
+</div>
+<div class="flex justify-between mt-2 text-[10px] text-slate-400 font-bold uppercase tracking-widest">
+<span>Débutant (0)</span>
+<span>Pro (10)</span>
+</div>
+</div>
+</div>
+<!-- Participant Status -->
+<div class="px-4 mb-6">
+<h3 class="text-slate-900 dark:text-white font-bold mb-3 flex items-center justify-between">
+            Participants 
+            <span class="text-sm font-normal text-slate-500 dark:text-slate-400">12 sur 16 places</span>
+</h3>
+<div class="flex flex-wrap items-center gap-2 mb-3">
+<div class="flex -space-x-3 overflow-hidden">
+<img alt="" class="inline-block h-10 w-10 rounded-full ring-2 ring-white dark:ring-background-dark" data-alt="Profile picture of a padel player" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3rxA2Pgb3g7Dqc2_hjbwjiMcrq5gIXQnHPXKjwIV4iEsQSkymYulriQ7ctx89SYwVnkTUl8KtCkPXZKh4HwCPqwNruGxPP55dIiNg2bEULRWO83Bh6Q0hdJjHpOGg4eUR2cRa9GFN5V1l4jyhXRtZPHkEDTjDxfXmbPBkA5mFd5nl7E277tbT-yEawikxyjOM14VQnsvRth69Oc8c5go0s9ZWpHRhSBcQArmkMAD5Ys7TwV8tqFPzecsZoi_cfpD-goiNJDye7uk"/>
+<img alt="" class="inline-block h-10 w-10 rounded-full ring-2 ring-white dark:ring-background-dark" data-alt="Profile picture of a padel player" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAPwDiR7Wi4X03EYfehr4vsGAc5ooO_rj2wwzTnJR90JoNh0mGAbWzYWIjLFWiNZvedTx-PDJ21SoAabUmq9XqFDUw5MmU2Pl7fOeCnrPA4LGHokLUDWEK7GYq6HLn9AK1IgpoJtsExPDlY_Ks2FxA5oYoClV7QiUWhP_DfaqVOFNp9tgCLc6nKpFx3J5OkIAIViNDCM3vi8lghh_htNj1tD98fix8gUzuXjsK8TINTMxx3HICucXS0gh7XOAhgSzCjMBOT_2JjVo"/>
+<img alt="" class="inline-block h-10 w-10 rounded-full ring-2 ring-white dark:ring-background-dark" data-alt="Profile picture of a padel player" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApEdQnMTreonXbiurP7Tsm9C5lfdRHksxrYQHaBS0CWSNlllZ3reMfYIm3NHHUUXLpgxl7NcQtZfIrqe77u5hM-swdovmj9XprmDrZwp4Z-kBXpclT1_6jGmtO-A_oiIYn1BExsqIi8uQaU3ZL5UVDWPpxImrGeWAJstehkwnJ4Jgv06QhlHuxRg9wp_-oECeawdD--g5IjvqQjUsWdrrx-nzXChuNEgf2IP0-W4b_W5sVMlDl9v0hHSaD9C_J0haTogXlo199gNY"/>
+<img alt="" class="inline-block h-10 w-10 rounded-full ring-2 ring-white dark:ring-background-dark" data-alt="Profile picture of a padel player" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpMpsAiPU5eakVgv-1CcFGt_UWXE_rEIxCObqJPHTGlEBTWe1VpVplmvK4h7hDVVaOBpriCxFXdK3Si1GyVx98TgRG-tMT2ZOu2FkardVBej9QrjSq9Av2SrxDtY_P1qxJSEVfDr7BCdjmIhWOTKLKkFBw67tsycuFBdQb0V79Toqb7DgI3X2iekXq5EHoTNMA4sXZSUWwE0XaHt7skLap0xrFOHRUoWYDP27lRckHi6zm9zn7YQuR-ZztOQoW1bsLtIsCkxOaX7M"/>
+<div class="flex items-center justify-center h-10 w-10 rounded-full bg-slate-800 ring-2 ring-white dark:ring-background-dark text-xs font-bold text-white">
+                    +8
+                </div>
+</div>
+<div class="h-10 px-4 bg-primary/10 border border-primary/20 rounded-full flex items-center gap-2 text-primary text-xs font-bold">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+                Plus que 4 places !
+            </div>
+</div>
+<div class="w-full bg-slate-200 dark:bg-slate-800 h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[75%]"></div>
+</div>
+</div>
+<!-- Event Rules -->
+<div class="px-4 mb-8">
+<h3 class="text-slate-900 dark:text-white font-bold mb-3">Règles &amp; Format</h3>
+<div class="space-y-4 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary shrink-0">info</span>
+<p>Tournoi sous forme de poules suivies de phases éliminatoires. Minimum 3 matchs garantis par paire.</p>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary shrink-0">timer</span>
+<p>Matchs en 2 sets gagnants. Format court (sets de 4 jeux) avec Point d'Or (No-Ad).</p>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary shrink-0">check_circle</span>
+<p>Fourniture des balles neuves pour chaque phase finale. Eau et fruits offerts aux participants.</p>
+</div>
+</div>
+</div>
+<!-- Map Preview -->
+<div class="px-4 mb-10">
+<h3 class="text-slate-900 dark:text-white font-bold mb-3">Localisation</h3>
+<div class="w-full h-40 rounded-xl overflow-hidden relative grayscale dark:invert-[0.9] dark:hue-rotate-180 opacity-80 border border-slate-200 dark:border-slate-800">
+<img class="w-full h-full object-cover" data-alt="Map showing the location of the padel club in Lyon" data-location="Lyon, France" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnXnlqTgAnx1qCjV4196VIU4-a8lpa8zsKhS13M2g_RlUFewSgF0qiulD6EYXuZV-ngYpEiOUfEiX4d0JvOyBBpGwEMtKBgDbxExMxco6SpfflkFjYbSBtlE7RHAm8km0SNR_rR0Crkq9QolehCUtRLNvInPshJV6zUIoS9wQ_qr_uOZ1Ot2XeHYgR0epjqmkO-e-q4wudLmIsausNAz8vkBVdD-JYWgRaDnHZx5VrDBXqoAUZKqu-29gdZW4083cB0Ma4HAT853o"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-primary p-2 rounded-full shadow-lg border-2 border-white">
+<span class="material-symbols-outlined text-white">location_on</span>
+</div>
+</div>
+</div>
+<p class="mt-2 text-xs text-slate-500 font-medium">12 Rue des Sports, 69007 Lyon</p>
+</div>
+<!-- Sticky Footer Registration -->
+<div class="fixed bottom-0 left-0 right-0 p-4 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-lg border-t border-slate-200 dark:border-slate-800 z-50">
+<div class="max-w-md mx-auto flex items-center gap-4">
+<div class="flex flex-col">
+<span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Total</span>
+<span class="text-xl font-bold text-slate-900 dark:text-white">25,00€</span>
+</div>
+<button class="flex-1 bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl shadow-[0_4px_14px_0_rgba(43,140,238,0.39)] transition-all active:scale-95 flex items-center justify-center gap-2">
+                S'inscrire maintenant
+                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</body></html>

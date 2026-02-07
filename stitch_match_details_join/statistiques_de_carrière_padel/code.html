@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Statistiques de Carrière Padel</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#25f425",
+                        "background-light": "#f5f8f5",
+                        "background-dark": "#102210",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+        .glow-primary {
+            box-shadow: 0 0 15px rgba(37, 244, 37, 0.4);
+        }
+        .glass-card {
+            background: rgba(40, 57, 40, 0.4);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen pb-20">
+<!-- Top Navigation Bar -->
+<nav class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-4 py-4 flex items-center justify-between">
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-200 dark:bg-white/10">
+<span class="material-symbols-outlined text-xl">arrow_back_ios_new</span>
+</button>
+<h1 class="text-lg font-bold tracking-tight">Ma Carrière</h1>
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-200 dark:bg-white/10 text-primary">
+<span class="material-symbols-outlined text-xl">share</span>
+</button>
+</nav>
+<!-- Header Section: Profile & Rating -->
+<header class="px-6 py-4 flex flex-col items-center">
+<div class="relative mb-6">
+<div class="w-28 h-28 rounded-full border-4 border-primary p-1">
+<div class="w-full h-full rounded-full bg-cover bg-center" data-alt="Portrait of a female padel player smiling" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAcig3N5wB-RVmB4KDXxfuvu0Ub6vKLdFs4X-4Ay7wgcnf0Wvoix_u6ygvXzNGa173E8NKxO9pl9umUnly9D5O5nEkK_Lq43DjVf6O-3NO3IZZ5RMD2i1RHU_L0cmNRGAcw2FD9wnfCsTkSatRUDQ7tZdnSQ3TxhnDmhAQeP6bhQB9kUuzxQ4ygqlnZ1McovkYW0DyO9Y219g0Ot_ZZS9yIIzQdkhM72S5yQ3dySdqUGJC33xfbyhl8u8qCrUQsMn2_9_kWknxa8F8')"></div>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-primary text-background-dark text-xs font-black px-3 py-1 rounded-full shadow-lg border-2 border-background-dark">
+                PRO
+            </div>
+</div>
+<div class="text-center mb-8">
+<div class="flex items-center justify-center gap-2 mb-1">
+<span class="text-4xl font-extrabold tracking-tighter text-primary">5.25</span>
+<span class="material-symbols-outlined text-primary text-2xl fill-1">verified</span>
+</div>
+<p class="text-sm font-medium text-slate-500 dark:text-primary/70 uppercase tracking-widest">Niveau Actuel</p>
+<div class="mt-2 inline-flex items-center gap-1.5 bg-primary/10 px-3 py-1 rounded-full border border-primary/20">
+<span class="material-symbols-outlined text-sm text-primary">trending_up</span>
+<span class="text-xs font-semibold text-primary">Top 10% en Suisse</span>
+</div>
+</div>
+</header>
+<!-- Progress Graph Section -->
+<section class="px-4 mb-8">
+<div class="glass-card rounded-xl p-6">
+<div class="flex items-end justify-between mb-6">
+<div>
+<h3 class="text-sm font-medium text-slate-400">Progression du Niveau</h3>
+<p class="text-2xl font-bold">+0.45 <span class="text-primary text-sm font-normal ml-1">▲ 8.5%</span></p>
+</div>
+<div class="text-right">
+<p class="text-xs font-medium text-slate-500 uppercase tracking-wider">6 derniers mois</p>
+</div>
+</div>
+<!-- SVG Chart Placeholder -->
+<div class="w-full h-40 relative">
+<svg class="w-full h-full" viewbox="0 0 400 150">
+<defs>
+<lineargradient id="chartGradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#25f425" stop-opacity="0.3"></stop>
+<stop offset="100%" stop-color="#25f425" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<path d="M0,130 C50,120 80,140 120,100 C160,60 200,90 250,50 C300,10 350,30 400,20 L400,150 L0,150 Z" fill="url(#chartGradient)"></path>
+<path d="M0,130 C50,120 80,140 120,100 C160,60 200,90 250,50 C300,10 350,30 400,20" fill="none" stroke="#25f425" stroke-linecap="round" stroke-width="3"></path>
+<!-- Current Point -->
+<circle cx="400" cy="20" fill="#25f425" r="4"></circle>
+<circle cx="400" cy="20" fill="none" r="8" stroke="#25f425" stroke-opacity="0.3"></circle>
+</svg>
+<div class="flex justify-between mt-4">
+<span class="text-[10px] font-bold text-slate-500">JAN</span>
+<span class="text-[10px] font-bold text-slate-500">FEV</span>
+<span class="text-[10px] font-bold text-slate-500">MAR</span>
+<span class="text-[10px] font-bold text-slate-500">AVR</span>
+<span class="text-[10px] font-bold text-slate-500">MAI</span>
+<span class="text-[10px] font-bold text-primary">JUIN</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Stats Grid -->
+<section class="px-4 grid grid-cols-3 gap-3 mb-8">
+<div class="bg-white dark:bg-white/5 p-4 rounded-xl border border-slate-200 dark:border-white/5 text-center">
+<span class="material-symbols-outlined text-primary mb-2 block">sports_tennis</span>
+<p class="text-xl font-extrabold">142</p>
+<p class="text-[10px] font-bold text-slate-500 uppercase">Matchs</p>
+</div>
+<div class="bg-white dark:bg-white/5 p-4 rounded-xl border border-slate-200 dark:border-white/5 text-center">
+<span class="material-symbols-outlined text-primary mb-2 block">emoji_events</span>
+<p class="text-xl font-extrabold">68%</p>
+<p class="text-[10px] font-bold text-slate-500 uppercase">Victoires</p>
+</div>
+<div class="bg-white dark:bg-white/5 p-4 rounded-xl border border-slate-200 dark:border-white/5 text-center">
+<span class="material-symbols-outlined text-primary mb-2 block">military_tech</span>
+<p class="text-xl font-extrabold">12</p>
+<p class="text-[10px] font-bold text-slate-500 uppercase">P.O.M</p>
+</div>
+</section>
+<!-- Recent Performances -->
+<section class="px-4">
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-lg font-bold">Dernières Performances</h2>
+<button class="text-primary text-sm font-semibold">Tout voir</button>
+</div>
+<div class="space-y-3">
+<!-- Performance Card 1 -->
+<div class="flex items-center gap-4 bg-white dark:bg-white/5 p-4 rounded-xl border border-slate-200 dark:border-white/10">
+<div class="w-2 bg-primary self-stretch rounded-full"></div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-1">
+<p class="font-bold text-sm">vs. Team Geneva</p>
+<span class="text-[10px] font-bold bg-primary/20 text-primary px-2 py-0.5 rounded uppercase">Victoire</span>
+</div>
+<p class="text-xs text-slate-500">Club Padel Lausanne • 12 Juin</p>
+</div>
+<div class="text-right">
+<p class="text-lg font-black tracking-tighter">6-2, 7-5</p>
+</div>
+</div>
+<!-- Performance Card 2 -->
+<div class="flex items-center gap-4 bg-white dark:bg-white/5 p-4 rounded-xl border border-slate-200 dark:border-white/10">
+<div class="w-2 bg-red-500 self-stretch rounded-full"></div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-1">
+<p class="font-bold text-sm">vs. Zurich Padel Elite</p>
+<span class="text-[10px] font-bold bg-red-500/20 text-red-500 px-2 py-0.5 rounded uppercase">Défaite</span>
+</div>
+<p class="text-xs text-slate-500">Swiss Padel Masters • 08 Juin</p>
+</div>
+<div class="text-right">
+<p class="text-lg font-black tracking-tighter text-slate-400">4-6, 3-6</p>
+</div>
+</div>
+<!-- Performance Card 3 -->
+<div class="flex items-center gap-4 bg-white dark:bg-white/5 p-4 rounded-xl border border-slate-200 dark:border-white/10">
+<div class="w-2 bg-primary self-stretch rounded-full"></div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-1">
+<p class="font-bold text-sm">vs. Basel Predators</p>
+<span class="text-[10px] font-bold bg-primary/20 text-primary px-2 py-0.5 rounded uppercase">Victoire</span>
+</div>
+<p class="text-xs text-slate-500">Padel Arena Basel • 02 Juin</p>
+</div>
+<div class="text-right">
+<p class="text-lg font-black tracking-tighter">6-0, 6-1</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Navigation Bar iOS Style -->
+<div class="fixed bottom-0 left-0 right-0 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-xl border-t border-slate-200 dark:border-white/10 px-8 py-4 pb-8 flex justify-between items-center">
+<button class="flex flex-col items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined">explore</span>
+<span class="text-[10px] font-bold uppercase">Découvrir</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="text-[10px] font-bold uppercase">Réservations</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined fill-1">analytics</span>
+<span class="text-[10px] font-bold uppercase">Carrière</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-bold uppercase">Profil</span>
+</button>
+</div>
+</body></html>

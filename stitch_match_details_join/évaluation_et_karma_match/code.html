@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Évaluation et Karma Match</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b8cee",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        input[type='range']::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            background: #2b8cee;
+            cursor: pointer;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        .karma-icon-active {
+            color: #2b8cee;
+            background-color: rgba(43, 140, 238, 0.15);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white min-h-screen">
+<!-- Top AppBar Component -->
+<div class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="flex items-center p-4 pb-2 justify-between">
+<div class="text-slate-900 dark:text-white flex size-12 shrink-0 items-center justify-start cursor-pointer">
+<span class="material-symbols-outlined">close</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Évaluation du Match</h2>
+<div class="size-12 flex items-center justify-end">
+<span class="material-symbols-outlined text-primary">info</span>
+</div>
+</div>
+<!-- Progress Bar -->
+<div class="flex flex-col gap-3 p-4 pt-0">
+<div class="flex gap-6 justify-between items-end">
+<p class="text-slate-600 dark:text-slate-300 text-base font-medium leading-normal">Notation des partenaires</p>
+<p class="text-primary text-sm font-bold leading-normal">1 sur 3</p>
+</div>
+<div class="rounded-full bg-slate-200 dark:bg-slate-800 h-2 overflow-hidden">
+<div class="h-full rounded-full bg-primary" style="width: 33%;"></div>
+</div>
+</div>
+</div>
+<!-- Main Content -->
+<main class="p-4 pb-32 max-w-md mx-auto">
+<!-- Step Title -->
+<h3 class="text-slate-900 dark:text-white tracking-tight text-2xl font-bold leading-tight text-center pb-6 pt-2">Comment était Thomas ?</h3>
+<!-- Player Profile Card -->
+<div class="flex flex-col items-center mb-8">
+<div class="relative group">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full border-4 border-primary/20 min-h-32 w-32 shadow-xl" data-alt="Portrait photo of a smiling man with athletic gear" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDZX3CGTlQlLB6rlPDgnQ8RLxoO2WtWPtIB5LV-jBgLpgn3BSd5MC_FF7OjltpknzKoP-LGDI5REHXZdsvjecolDimlSaNxfheoAaRxFkJIVRo6qO1y4JgJURc_dRkMZ79If99ibDJTb9mzxJhnWmDWMTk7Hx8Zf0OGkpVfG6KKtmG7nxlzCSd0QHy8jj4nmHr3ouxa5aiOCRrY0pHoWS5B4ryeAcvr3K0rGTv_bYxvaXug0NcyGC2QtXIms7yBG7_2LZQZTQE7oZY");'>
+</div>
+<div class="absolute bottom-0 right-0 bg-primary text-white text-xs font-bold px-2 py-1 rounded-full border-2 border-background-dark">
+                    PRO
+                </div>
+</div>
+<div class="mt-4 flex flex-col items-center">
+<p class="text-slate-900 dark:text-white text-2xl font-bold tracking-tight text-center">Thomas L.</p>
+<div class="flex items-center gap-1 mt-1 bg-primary/10 px-3 py-1 rounded-full">
+<span class="material-symbols-outlined text-primary text-sm">sports_tennis</span>
+<p class="text-primary text-sm font-semibold text-center uppercase tracking-wide">Niveau : 4.5</p>
+</div>
+</div>
+</div>
+<!-- Section 1: Karma & Reliability -->
+<div class="space-y-4 mb-10">
+<div class="flex items-center justify-between px-2">
+<h4 class="text-slate-500 dark:text-slate-400 text-xs font-bold leading-normal tracking-widest uppercase">FIABILITÉ &amp; KARMA</h4>
+<span class="text-xs text-primary font-medium">Fair-play total</span>
+</div>
+<div class="grid grid-cols-4 gap-3">
+<!-- Karma Option 1 -->
+<button class="flex flex-col items-center gap-2 p-3 rounded-xl bg-slate-100 dark:bg-slate-800/50 border border-transparent hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-2xl text-slate-400">schedule</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Ponctuel</span>
+</button>
+<!-- Karma Option 2 (Active) -->
+<button class="flex flex-col items-center gap-2 p-3 rounded-xl bg-primary/10 border border-primary/30 transition-all text-primary">
+<span class="material-symbols-outlined text-2xl">handshake</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Fair-play</span>
+</button>
+<!-- Karma Option 3 -->
+<button class="flex flex-col items-center gap-2 p-3 rounded-xl bg-slate-100 dark:bg-slate-800/50 border border-transparent hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-2xl text-slate-400">chat_bubble</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Sympa</span>
+</button>
+<!-- Karma Option 4 -->
+<button class="flex flex-col items-center gap-2 p-3 rounded-xl bg-slate-100 dark:bg-slate-800/50 border border-transparent hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-2xl text-slate-400">military_tech</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Combatif</span>
+</button>
+</div>
+</div>
+<!-- Section 2: Technical Level Adjust -->
+<div class="space-y-6">
+<div class="flex items-center justify-between px-2">
+<h4 class="text-slate-500 dark:text-slate-400 text-xs font-bold leading-normal tracking-widest uppercase">NIVEAU TECHNIQUE RÉEL</h4>
+<div class="bg-primary px-2 py-0.5 rounded text-[10px] text-white font-bold tracking-tighter uppercase">Ajustement</div>
+</div>
+<div class="bg-slate-100 dark:bg-slate-800/50 p-6 rounded-2xl border border-slate-200 dark:border-slate-700">
+<div class="flex justify-between items-center mb-8">
+<span class="text-4xl font-bold text-primary">4.5</span>
+<div class="flex flex-col items-end">
+<span class="text-xs text-slate-500 font-medium">Score suggéré</span>
+<span class="text-sm font-bold text-green-500">+0.2 Karma Bonus</span>
+</div>
+</div>
+<div class="relative w-full h-12 flex items-center">
+<input class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer" max="10" min="0" step="0.1" type="range" value="4.5"/>
+<div class="absolute -bottom-6 w-full flex justify-between px-1">
+<span class="text-[10px] text-slate-400 font-bold uppercase">Débutant</span>
+<span class="text-[10px] text-slate-400 font-bold uppercase">Expert</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Success/Info Box -->
+<div class="mt-12 p-4 rounded-xl bg-green-500/10 border border-green-500/20 flex gap-3 items-center">
+<span class="material-symbols-outlined text-green-500">verified</span>
+<p class="text-green-500 text-xs font-medium leading-tight">
+                Votre évaluation aide à maintenir un équilibre compétitif sain dans la communauté.
+            </p>
+</div>
+</main>
+<!-- Bottom Action Bar -->
+<div class="fixed bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-background-light dark:from-background-dark via-background-light/95 dark:via-background-dark/95 to-transparent">
+<div class="max-w-md mx-auto flex gap-3">
+<button class="flex-1 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+                Passer
+            </button>
+<button class="flex-[2] bg-primary text-white py-4 rounded-xl font-bold shadow-lg shadow-primary/30 flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+<span>Suivant</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+<!-- Safe area home indicator padding for iOS -->
+<div class="h-6"></div>
+</div>
+</body></html>

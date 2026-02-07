@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Actualités et Social - Padel Community</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#06f957",
+                        "background-light": "#f5f8f6",
+                        "background-dark": "#0f2316",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white transition-colors duration-300">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-white/10">
+<div class="flex items-center justify-between px-4 h-16">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">person</span>
+</div>
+<div>
+<h1 class="text-lg font-bold leading-tight">Social</h1>
+<p class="text-xs text-slate-500 dark:text-primary/70 font-medium uppercase tracking-wider">Communauté Padel</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="size-10 flex items-center justify-center rounded-full bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-white">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="size-10 flex items-center justify-center rounded-full bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-white relative">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 size-2 bg-primary rounded-full border-2 border-background-light dark:border-background-dark"></span>
+</button>
+</div>
+</div>
+</header>
+<main class="pb-24">
+<!-- 1. News Carousel Section -->
+<section class="mt-4">
+<div class="flex items-center justify-between px-4 mb-3">
+<h2 class="text-xl font-bold italic uppercase tracking-tight">À la une</h2>
+<button class="text-primary text-sm font-semibold">Tout voir</button>
+</div>
+<div class="flex overflow-x-auto gap-4 px-4 pb-4 no-scrollbar snap-x snap-mandatory">
+<!-- News Card 1 -->
+<div class="flex-none w-80 snap-center rounded-xl overflow-hidden relative aspect-[16/10] bg-slate-800 shadow-xl group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Intense padel match in action on a professional court" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCLZK7jRYe63hYOM5R_nz1P1kTWhOHLTbxvZBLPsMvXcEvDntkYs4JA2sY0UunmUIzj5RpoGI4uhfH27xvhJGgLpH-MV6PNmwERclousoxIICP0NvGy6-VUM9j0mMuIxdfIFQ0ViXlQKGtEybeBGp2Mk-9WtGH3-131KptzHUQAn6m_j3lRrq3j9uQryqGd8fjrjsE0n8UlQ3laIqnTsv7a-x2JrQMIi94oaZtMVTXtJvHAnYFQdfb3e_U6WWL17hwQ0zHJU8uCR34');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 p-4 w-full">
+<span class="inline-block px-2 py-1 rounded bg-primary text-background-dark text-[10px] font-bold uppercase mb-2">Tournoi</span>
+<h3 class="text-white text-lg font-bold leading-tight mb-2">Open Paris Padel 2024</h3>
+<div class="flex items-center justify-between">
+<p class="text-white/70 text-xs font-medium">Inscriptions ouvertes • 12-14 Juil.</p>
+<button class="bg-white/10 hover:bg-white/20 backdrop-blur-md px-3 py-1.5 rounded-lg text-white text-xs font-bold transition-colors">S'inscrire</button>
+</div>
+</div>
+</div>
+<!-- News Card 2 -->
+<div class="flex-none w-80 snap-center rounded-xl overflow-hidden relative aspect-[16/10] bg-slate-800 shadow-xl group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Close up of padel rackets and yellow balls" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDn4BfmXWpoB8e1WNEHHD8yz1r7gy-M-Qtogb0sFkI85RButhntmA43P6NYl8J-7rPOJF-rYJDFsPydA2UVAHYfmLaqtotV2aN9cRdw4JUGyUCBgZwMqX9tD10I6CDb8KYYn0DEfE13BdAcA6XnplY4g6SZDfDuQn0rPQ-2maoPWH5KOzCZYCuiDLPJFRrScNSd8HwkrSVKfYh0KO6_ho_NjOQ9XF-xVHeC0qU3gXLO2DluXrrReBExDstOcElM69ffP3i_JEgDSK4');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 p-4 w-full">
+<span class="inline-block px-2 py-1 rounded bg-primary text-background-dark text-[10px] font-bold uppercase mb-2">Clinique</span>
+<h3 class="text-white text-lg font-bold leading-tight mb-2">Masterclass avec Pro</h3>
+<div class="flex items-center justify-between">
+<p class="text-white/70 text-xs font-medium">Apprenez le 'Bandeja' parfait</p>
+<button class="bg-white/10 hover:bg-white/20 backdrop-blur-md px-3 py-1.5 rounded-lg text-white text-xs font-bold transition-colors">Réserver</button>
+</div>
+</div>
+</div>
+<!-- News Card 3 -->
+<div class="flex-none w-80 snap-center rounded-xl overflow-hidden relative aspect-[16/10] bg-slate-800 shadow-xl group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Aerial view of multiple green padel courts" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC5nrMWyUTc-4Cnu9Pg0pd0I15_7pDHjpiCrHxoCaZXy3r9mUwRWs869_-4duBiS0AwqQ3CVIpDtNLmtK_TFjG9kHZVGCnOO-yJPJiv-etchg7W-lCN5poFFf5ZhCBfpdfxkDbvX7NAndJ71-gcsHGl6XkDocbXuxuDFqFQuumbQvNWDy_Aa2RQdbAlscSu1POhqqGi8te9oO-5sQyHDVayyRvcHHPZEruOrlFsBkUOkFtSnfVjnG70f1uZoALNekMdk0-wAElQjZo');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 p-4 w-full">
+<span class="inline-block px-2 py-1 rounded bg-primary text-background-dark text-[10px] font-bold uppercase mb-2">Promotion</span>
+<h3 class="text-white text-lg font-bold leading-tight mb-2">-20% sur la Boutique</h3>
+<div class="flex items-center justify-between">
+<p class="text-white/70 text-xs font-medium">Offre réservée aux membres</p>
+<button class="bg-white/10 hover:bg-white/20 backdrop-blur-md px-3 py-1.5 rounded-lg text-white text-xs font-bold transition-colors">Voir</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Friends Status Horizontal List -->
+<section class="mt-6">
+<h2 class="px-4 text-sm font-bold uppercase text-slate-500 dark:text-primary/50 tracking-widest mb-3">Amis Connectés</h2>
+<div class="flex gap-4 overflow-x-auto px-4 pb-2 no-scrollbar">
+<!-- Connected Friend 1 -->
+<div class="flex flex-col items-center gap-1.5 min-w-[64px]">
+<div class="relative">
+<div class="size-16 rounded-full p-0.5 bg-gradient-to-tr from-primary to-transparent">
+<img class="size-full rounded-full object-cover border-2 border-background-light dark:border-background-dark" data-alt="Portrait of a smiling man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJSVw38vqOptcTy1SUp_f5Rr1rsAdq14COtP0YUngNMKm9OIh8DBRjsxeIUBwEaF6DQ5gpPujNgenQmzZxr05a249AHzNQUPQhU-O-rNsI3Ahke-bFjA3R_r0la0cSNTH3FvtGV1eY7Vb5NdiO0V_pnAGP6k-v5yZb3jxCaqrLfNUlc91wGVzplYvrw0TisWQaFutlbo1wridO7D5AhV-RN01q4nfhmnTn5PA20NWIgvYCfx6Ek2H6RWAUZoSEkjw7OJoiyQ3mrKU"/>
+</div>
+<span class="absolute bottom-0.5 right-0.5 size-4 bg-primary border-4 border-background-light dark:border-background-dark rounded-full"></span>
+</div>
+<span class="text-[11px] font-medium truncate w-16 text-center">Thomas</span>
+</div>
+<!-- Connected Friend 2 -->
+<div class="flex flex-col items-center gap-1.5 min-w-[64px]">
+<div class="relative">
+<div class="size-16 rounded-full p-0.5 bg-gradient-to-tr from-primary to-transparent">
+<img class="size-full rounded-full object-cover border-2 border-background-light dark:border-background-dark" data-alt="Portrait of a professional woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1Ui4XsXNPcOtQ6Uoll00MKa1XYKVpCxwZte2S_MHxB3AmoSxj2eDXHrJTisdasuhV--hElDH3laQCzXFuOJu_cGaw4XNKXDxRh_Fsrlbye2-rq4pJUlzPEFySMlpbuKYOsdpezJe1jWZMPr-pdASi_m7NuWBVYm8cYZByvH4-Z87fu3Hly5LtZVspyU6Py9y-lL_zacPlLQfbApxDNL8EmLCbIEGoG2Ruunw7PW_BpLTtd3IUENCrqj-RHDPpSZYe9Fkj8cxRROY"/>
+</div>
+<span class="absolute bottom-0.5 right-0.5 size-4 bg-primary border-4 border-background-light dark:border-background-dark rounded-full"></span>
+</div>
+<span class="text-[11px] font-medium truncate w-16 text-center">Julie</span>
+</div>
+<!-- Connected Friend 3 -->
+<div class="flex flex-col items-center gap-1.5 min-w-[64px]">
+<div class="relative">
+<div class="size-16 rounded-full p-0.5 bg-slate-300 dark:bg-white/10">
+<img class="size-full rounded-full object-cover border-2 border-background-light dark:border-background-dark grayscale" data-alt="Man profile picture in black and white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfPrF56cQ4tkfKdtkXgrdrbydlp1P7TDXulficFjf-y25BhgtMf1W2881u6NSnBnbC-0GfbAjhFWS4IZ9g-tq0jwgjitT8ihUouCNl1dh9nTc7bGYQcRE2K2OiRIWSIgdwPtpgcbuCey-c6QKyERQUGmsungSEqHVpGGES4uaNRnd3X6t21MfzfrTh4K9KxGzr3-JlMC828YKmPDUWTnwQ2aEcyWOJ5acjvBq8EFPx0_5h8v0ShsXGAxGiFSqtIh7fYPboxU7RU28"/>
+</div>
+<span class="absolute bottom-0.5 right-0.5 size-4 bg-slate-400 border-4 border-background-light dark:border-background-dark rounded-full"></span>
+</div>
+<span class="text-[11px] font-medium truncate w-16 text-center opacity-60">Marc</span>
+</div>
+<!-- Add friend button -->
+<div class="flex flex-col items-center gap-1.5 min-w-[64px]">
+<button class="size-16 rounded-full border-2 border-dashed border-slate-300 dark:border-white/20 flex items-center justify-center text-slate-400">
+<span class="material-symbols-outlined">add</span>
+</button>
+<span class="text-[11px] font-medium text-center opacity-60">Inviter</span>
+</div>
+</div>
+</section>
+<!-- 3. Activités des Amis Feed -->
+<section class="mt-8 px-4">
+<h2 class="text-xl font-bold italic uppercase tracking-tight mb-4">Fil d'actualité</h2>
+<div class="space-y-4">
+<!-- Activity Item 1 -->
+<div class="bg-white dark:bg-white/5 rounded-xl p-4 shadow-sm border border-slate-100 dark:border-white/5">
+<div class="flex gap-3">
+<div class="size-10 rounded-full overflow-hidden shrink-0">
+<img class="size-full object-cover" data-alt="Portrait of a male padel player" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkyAvkH6_c4y7xvUDuiicz0yuF07tfn4_odvCUgV0sWkxBL81EZsWMCEHwajVtUkIWpuuOvLtP1j36DghOTeMbHGczXPoWupOlDsyOAUrFgpsS9VhAtzM_g3j2eiegCE6ATil610RejfvUIgxV_d5k_hx2yt6dxE8nySLpiuJQYWlJLwc_wGPGsKK2fq6g9_HsahMSHkJqo1hynMeeow0W34aZepXdi-QhISmAk_hcsFcn9kGu33WdWLTna4YTk4ZMCTFviV2Hg4Y"/>
+</div>
+<div class="flex-1">
+<p class="text-sm font-medium leading-snug">
+<span class="font-bold">Marc L.</span> a rejoint une partie au <span class="text-primary font-bold">Club Central</span>
+</p>
+<p class="text-[10px] text-slate-400 dark:text-white/40 mt-1 uppercase font-semibold">Aujourd'hui, 18:30 • Niveau 3.5</p>
+<div class="mt-4 flex gap-2">
+<button class="flex-1 bg-primary text-background-dark h-9 rounded-lg font-bold text-xs">Rejoindre Marc</button>
+<button class="size-9 bg-slate-100 dark:bg-white/10 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Activity Item 2 (Achievement) -->
+<div class="bg-white dark:bg-white/5 rounded-xl p-4 shadow-sm border border-slate-100 dark:border-white/5 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-2">
+<span class="material-symbols-outlined text-primary/20 text-4xl rotate-12">emoji_events</span>
+</div>
+<div class="flex gap-3">
+<div class="size-10 rounded-full overflow-hidden shrink-0 ring-2 ring-primary ring-offset-2 dark:ring-offset-background-dark">
+<img class="size-full object-cover" data-alt="Portrait of a female padel player" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfTmnACiIzIB0XbZTHk4Q_f7rN8BIBDkNjxRBkcg5jyBifF8i7ZMQEFJ1t4jdLDgsPh1i07E_k1z8C1dZopIpKmZdlGNb4iW3jcANstW7tyzhKRKZAme6v_PM-qtqBABQH5iybTbHZIDGsJL8utQELNmpeXqnN7SdV9lgp7f4_Zytr5z_90OTriXyXkyH9IEiR8J1zFPGVcOK1ubtlwzCJ5AZSVjFxIFDQ3JpFtOPaBbv2cyRLmYmxKkvSz0FsTwOfZ1v9wvCNXaQ"/>
+</div>
+<div class="flex-1">
+<p class="text-sm font-medium leading-snug">
+<span class="font-bold">Julie D.</span> est passée au <span class="text-primary font-bold">Niveau 4 !</span>
+</p>
+<p class="text-[10px] text-slate-400 dark:text-white/40 mt-1 uppercase font-semibold">Il y a 2 heures</p>
+<div class="mt-3 flex items-center gap-3">
+<div class="flex -space-x-2">
+<div class="size-6 rounded-full border-2 border-white dark:border-background-dark bg-slate-200"></div>
+<div class="size-6 rounded-full border-2 border-white dark:border-background-dark bg-slate-300"></div>
+<div class="size-6 rounded-full border-2 border-white dark:border-background-dark bg-primary flex items-center justify-center text-[10px] font-bold text-background-dark">+12</div>
+</div>
+<span class="text-[11px] font-medium text-slate-500">ont félicité Julie</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Activity Item 3 (Match Result) -->
+<div class="bg-white dark:bg-white/5 rounded-xl p-4 shadow-sm border border-slate-100 dark:border-white/5">
+<div class="flex gap-3">
+<div class="size-10 rounded-full overflow-hidden shrink-0">
+<img class="size-full object-cover" data-alt="Smiling man portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaEEStB_44UlDBj8cdV154VLi8IQAVnc2gKjyTgW9OVvEa7yzX9oJkeP-gSAMIUU_sBQnGYsP5hFJUaDCKT77EKmWdNBnIfThcw7iY0meZ0JQxMEvooup4sbmbvsnzt116CW7bDrmOa3Hao9l4ZWC2onJNQDNZY02v22hPwUZJUQ-2m9rGJR3i4qG64vSs6_ZT7rJpCL-lN0r6qRPBhFMWksXuOajeRkoQS6e5bVgp47_uXgq2Y26_acaVBu-GMFccW769hZDpp0c"/>
+</div>
+<div class="flex-1">
+<p class="text-sm font-medium leading-snug">
+<span class="font-bold">Thomas R.</span> a gagné son match !
+                            </p>
+<div class="mt-2 bg-slate-100 dark:bg-black/20 rounded-lg p-2 flex items-center justify-between text-center">
+<div class="flex-1">
+<p class="text-[10px] uppercase font-bold text-slate-400">Set 1</p>
+<p class="text-lg font-black italic">6 - 4</p>
+</div>
+<div class="w-px h-8 bg-slate-200 dark:bg-white/10"></div>
+<div class="flex-1">
+<p class="text-[10px] uppercase font-bold text-slate-400">Set 2</p>
+<p class="text-lg font-black italic">6 - 2</p>
+</div>
+</div>
+<div class="mt-3 flex items-center justify-between">
+<div class="flex gap-4">
+<button class="flex items-center gap-1 text-slate-500 dark:text-white/60">
+<span class="material-symbols-outlined text-lg">thumb_up</span>
+<span class="text-xs font-bold">24</span>
+</button>
+<button class="flex items-center gap-1 text-slate-500 dark:text-white/60">
+<span class="material-symbols-outlined text-lg">chat_bubble</span>
+<span class="text-xs font-bold">5</span>
+</button>
+</div>
+<span class="text-[10px] text-slate-400 font-semibold uppercase">Il y a 5h</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation (iOS Style) -->
+<nav class="fixed bottom-0 inset-x-0 bg-white/90 dark:bg-background-dark/95 backdrop-blur-xl border-t border-slate-200 dark:border-white/10 px-6 pb-6 pt-3 z-50">
+<div class="flex justify-between items-center max-w-md mx-auto">
+<button class="flex flex-col items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Accueil</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined">calendar_month</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Matches</span>
+</button>
+<button class="relative -top-6 size-14 bg-primary rounded-full shadow-lg shadow-primary/20 flex items-center justify-center text-background-dark border-4 border-background-light dark:border-background-dark">
+<span class="material-symbols-outlined text-3xl font-bold">add</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined">diversity_3</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Social</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined">sports_tennis</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Profil</span>
+</button>
+</div>
+</nav>
+</body></html>

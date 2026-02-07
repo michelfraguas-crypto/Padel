@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d10a11","secondary": "#2b8cee",
+                        "background-light": "#f8fafc",
+                        "background-dark": "#0f172a",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.6rem",
+                        "xl": "1rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body { font-family: 'Lexend', sans-serif; }
+        .glass-effect {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .swiss-gradient {
+            background: linear-gradient(135deg, #d10a11 0%, #a5080d 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen pb-32">
+<div class="sticky top-0 z-50 flex items-center bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-xl p-4 justify-between border-b border-slate-200 dark:border-slate-800">
+<button class="text-slate-900 dark:text-white flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<div class="text-center">
+<h2 class="text-slate-900 dark:text-white text-base font-bold leading-tight tracking-tight">Détails de l'Événement</h2>
+<p class="text-[10px] text-primary font-bold flex items-center justify-center gap-1 uppercase tracking-widest">
+<span class="size-1.5 bg-primary rounded-full animate-pulse"></span> Tournoi Suisse
+        </p>
+</div>
+<div class="flex items-center gap-1">
+<button class="flex items-center justify-center rounded-full size-10 text-slate-900 dark:text-white hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<button class="flex items-center justify-center rounded-full size-10 text-slate-900 dark:text-white hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined">share</span>
+</button>
+</div>
+</div>
+<div class="@container">
+<div class="px-0 sm:px-4 py-0 sm:py-4">
+<div class="relative w-full aspect-[4/5] sm:aspect-[21/9] bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden sm:rounded-2xl shadow-2xl" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCvgk-Ny2Idbgxq4ZJdV9o8rack0CElNHSYckd7UAY0-tsSR19F-gccGJa0VbEvCZpZk2u12Xs2A_fMlOXzWGyw3kVv6ycKGVic-AcyPzSkST8gHOD-7ufkZZwPIN_QvyKGRZgDvZhuedtd10QYBgbusX-zh5OpuBxg1iQSDYuzoyV117q_dAI_-5pFKK4QR4YUKgED_z0x_G9ERGMbP6hipqBspX0newt026enhjAhBjot7WywnFH_hLqBtd2bla_RXhSIQ-J0pcQ");'>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent"></div>
+<div class="absolute top-4 right-4 bg-white/10 backdrop-blur-md border border-white/20 p-2 rounded-xl flex items-center gap-3">
+<div class="size-10 bg-white rounded-lg flex items-center justify-center p-1 overflow-hidden">
+<img alt="Logo Club" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYowiHSRvKZTzOc65aTOqCdKj6ByiZwO3fECUhGBvMgsxp6CRYWsgFvS1S_eQu2_uWKXfFRQvUkBTaHL_2LssH7gC_SnYuDUKnjCuUQwEMgNTXe_F6k8gW0IAj9HwRQNOrF--FQK3L7E13_Z2PmK1wsKKmFAuZ4oSyqk8JwACwUBwJRdTtghFRsZKE4XKR1phcYBXRZyBS36bwHJ3wYyJFfZY2LsOOMqbcG1nIq_S90mRnx8kJLwr-LgXiZrbe2nVCl18VIEUNri8"/>
+</div>
+<div class="pr-2">
+<p class="text-[10px] text-slate-300 font-bold uppercase">Club Hôte</p>
+<p class="text-xs text-white font-extrabold">Léman Padel Arena</p>
+</div>
+</div>
+<div class="relative p-6">
+<div class="flex gap-2 mb-3">
+<span class="inline-flex items-center gap-1 bg-primary text-white text-[10px] font-black px-2.5 py-1 rounded-md uppercase tracking-tighter">
+                        Gold Series
+                    </span>
+<span class="inline-flex items-center gap-1 bg-white/20 backdrop-blur-sm text-white text-[10px] font-black px-2.5 py-1 rounded-md uppercase tracking-tighter">
+                        Cat. A
+                    </span>
+</div>
+<h1 class="text-white text-4xl font-extrabold leading-none tracking-tight mb-2">Swiss Open <br/>Master Geneva</h1>
+<p class="text-slate-300 text-sm font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">verified</span>
+                    Homologué par la Fédération Locale
+                </p>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3 p-4">
+<div class="flex flex-col gap-3 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-4 shadow-sm">
+<div class="size-8 rounded-lg bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl">event</span>
+</div>
+<div>
+<h3 class="text-slate-500 dark:text-slate-400 text-[10px] font-bold uppercase tracking-widest">Date &amp; Heure</h3>
+<p class="text-slate-900 dark:text-white text-sm font-extrabold">14 Juin, 09:30</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-4 shadow-sm">
+<div class="size-8 rounded-lg bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl">payments</span>
+</div>
+<div>
+<h3 class="text-slate-500 dark:text-slate-400 text-[10px] font-bold uppercase tracking-widest">Prix Inscription</h3>
+<p class="text-slate-900 dark:text-white text-sm font-extrabold">45.00 CHF <span class="text-[10px] font-normal text-slate-400">/joueur</span></p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-4 shadow-sm">
+<div class="size-8 rounded-lg bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl">location_on</span>
+</div>
+<div>
+<h3 class="text-slate-500 dark:text-slate-400 text-[10px] font-bold uppercase tracking-widest">Ville</h3>
+<p class="text-slate-900 dark:text-white text-sm font-extrabold">Genève, CH</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-4 shadow-sm">
+<div class="size-8 rounded-lg bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl">workspace_premium</span>
+</div>
+<div>
+<h3 class="text-slate-500 dark:text-slate-400 text-[10px] font-bold uppercase tracking-widest">Format</h3>
+<p class="text-slate-900 dark:text-white text-sm font-extrabold">Double Mixte</p>
+</div>
+</div>
+</div>
+<div class="px-4 space-y-4 mb-6">
+<div class="bg-white dark:bg-slate-900/50 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 shadow-sm">
+<div class="flex justify-between items-center mb-5">
+<div>
+<h3 class="text-slate-900 dark:text-white font-extrabold text-sm uppercase tracking-tight">Niveau de Compétition</h3>
+<p class="text-[11px] text-slate-500">Ouvert aux joueurs confirmés</p>
+</div>
+<span class="text-primary font-black bg-primary/10 px-3 py-1 rounded-lg text-xs border border-primary/20">6.5 - 9.0</span>
+</div>
+<div class="relative h-3 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+<div class="absolute left-[65%] right-[10%] h-full swiss-gradient rounded-full shadow-lg shadow-primary/20"></div>
+</div>
+<div class="flex justify-between mt-3 text-[9px] text-slate-400 font-bold uppercase tracking-widest">
+<span>Débutant (0)</span>
+<span>Expert (10)</span>
+</div>
+</div>
+<div class="bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-2xl p-5 flex items-center justify-between shadow-xl">
+<div class="flex flex-col">
+<h3 class="font-black text-sm uppercase italic tracking-tighter">Inscriptions Ouvertes</h3>
+<div class="flex items-center gap-2 mt-1">
+<div class="flex -space-x-2">
+<img alt="" class="h-6 w-6 rounded-full ring-2 ring-slate-900 dark:ring-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3rxA2Pgb3g7Dqc2_hjbwjiMcrq5gIXQnHPXKjwIV4iEsQSkymYulriQ7ctx89SYwVnkTUl8KtCkPXZKh4HwCPqwNruGxPP55dIiNg2bEULRWO83Bh6Q0hdJjHpOGg4eUR2cRa9GFN5V1l4jyhXRtZPHkEDTjDxfXmbPBkA5mFd5nl7E277tbT-yEawikxyjOM14VQnsvRth69Oc8c5go0s9ZWpHRhSBcQArmkMAD5Ys7TwV8tqFPzecsZoi_cfpD-goiNJDye7uk"/>
+<img alt="" class="h-6 w-6 rounded-full ring-2 ring-slate-900 dark:ring-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAPwDiR7Wi4X03EYfehr4vsGAc5ooO_rj2wwzTnJR90JoNh0mGAbWzYWIjLFWiNZvedTx-PDJ21SoAabUmq9XqFDUw5MmU2Pl7fOeCnrPA4LGHokLUDWEK7GYq6HLn9AK1IgpoJtsExPDlY_Ks2FxA5oYoClV7QiUWhP_DfaqVOFNp9tgCLc6nKpFx3J5OkIAIViNDCM3vi8lghh_htNj1tD98fix8gUzuXjsK8TINTMxx3HICucXS0gh7XOAhgSzCjMBOT_2JjVo"/>
+<div class="h-6 w-6 rounded-full bg-primary ring-2 ring-slate-900 dark:ring-white flex items-center justify-center text-[8px] font-bold">+22</div>
+</div>
+<span class="text-[10px] font-bold opacity-80 uppercase">24 inscrits sur 32</span>
+</div>
+</div>
+<div class="text-right">
+<div class="text-[10px] font-bold text-primary dark:text-primary uppercase tracking-widest mb-1">Dernier appel</div>
+<div class="text-xs font-black uppercase tracking-tighter">8 places restantes</div>
+</div>
+</div>
+</div>
+<div class="px-4 mb-8">
+<div class="flex items-center gap-2 mb-4">
+<div class="h-6 w-1 swiss-gradient rounded-full"></div>
+<h3 class="text-slate-900 dark:text-white font-extrabold text-lg tracking-tight uppercase">Règlement &amp; Inclus</h3>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<div class="flex gap-4 p-4 rounded-xl bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-800">
+<span class="material-symbols-outlined text-primary shrink-0">trophy</span>
+<div>
+<h4 class="text-sm font-bold text-slate-900 dark:text-white mb-1">Dotation Premium</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Cashprize de 1'500 CHF pour les vainqueurs et bons d'achat partenaires locaux.</p>
+</div>
+</div>
+<div class="flex gap-4 p-4 rounded-xl bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-800">
+<span class="material-symbols-outlined text-primary shrink-0">restaurant</span>
+<div>
+<h4 class="text-sm font-bold text-slate-900 dark:text-white mb-1">Catering Offert</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Plateaux de fruits frais, barres énergétiques et eau minérale des Alpes à volonté.</p>
+</div>
+</div>
+<div class="flex gap-4 p-4 rounded-xl bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-800">
+<span class="material-symbols-outlined text-primary shrink-0">history_edu</span>
+<div>
+<h4 class="text-sm font-bold text-slate-900 dark:text-white mb-1">Système de Poules</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Phase de poules (3 matchs min.) puis tableau final à élimination directe.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4 mb-10">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-slate-900 dark:text-white font-extrabold text-lg uppercase tracking-tight">Accès au Club</h3>
+<button class="text-primary text-xs font-bold flex items-center gap-1">
+            Ouvrir Maps <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+<div class="w-full h-48 rounded-2xl overflow-hidden relative border-2 border-slate-200 dark:border-slate-800 group">
+<img alt="Location Map" class="w-full h-full object-cover grayscale-0 dark:grayscale group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnXnlqTgAnx1qCjV4196VIU4-a8lpa8zsKhS13M2g_RlUFewSgF0qiulD6EYXuZV-ngYpEiOUfEiX4d0JvOyBBpGwEMtKBgDbxExMxco6SpfflkFjYbSBtlE7RHAm8km0SNR_rR0Crkq9QolehCUtRLNvInPshJV6zUIoS9wQ_qr_uOZ1Ot2XeHYgR0epjqmkO-e-q4wudLmIsausNAz8vkBVdD-JYWgRaDnHZx5VrDBXqoAUZKqu-29gdZW4083cB0Ma4HAT853o"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex items-center gap-3">
+<div class="swiss-gradient p-2 rounded-lg shadow-xl ring-2 ring-white">
+<span class="material-symbols-outlined text-white text-xl">location_on</span>
+</div>
+<div class="text-white drop-shadow-md">
+<p class="font-black text-sm">Léman Padel Arena</p>
+<p class="text-[10px] font-medium opacity-90">Route de Vernier 156, 1214 Vernier, Suisse</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed bottom-0 left-0 right-0 p-5 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-2xl border-t border-slate-200 dark:border-slate-800 z-50">
+<div class="max-w-md mx-auto flex items-center gap-6">
+<div class="flex flex-col min-w-max">
+<span class="text-[10px] text-slate-500 dark:text-slate-400 font-black uppercase tracking-widest">Total à payer</span>
+<span class="text-2xl font-black text-slate-900 dark:text-white tracking-tighter">45.00 <span class="text-sm font-bold text-primary">CHF</span></span>
+</div>
+<button class="flex-1 swiss-gradient text-white font-black py-4 rounded-2xl shadow-[0_8px_30px_rgb(209,10,17,0.3)] transition-all active:scale-95 flex items-center justify-center gap-3 text-sm uppercase tracking-wider">
+            S'inscrire
+            <span class="material-symbols-outlined font-black">sports_tennis</span>
+</button>
+</div>
+</div>
+
+</body></html>
